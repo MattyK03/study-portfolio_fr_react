@@ -1,0 +1,43 @@
+.skills {
+    padding: 60px 0;
+}
+
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__name {
+    margin-top: 50px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.skills__text {
+    margin-top: 25px;
+    max-width: 600px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        min-height: unset;
+        padding: 30px;
+    }
+
+    .skills__name {
+        margin-top: 25px;
+    }
+
+    .skills__text {
+        margin-top: 10px;
+    }
+}

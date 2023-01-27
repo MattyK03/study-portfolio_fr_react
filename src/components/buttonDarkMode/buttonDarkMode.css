@@ -1,0 +1,38 @@
+.dark__mode {
+    order: 1;
+
+    display: flex;
+    justify-content: space-between;
+    width: 51px;
+    height: 26px;
+    padding: 5px;
+
+    border-radius: 25px;
+
+    background-color: #272727;
+    position: relative;
+}
+
+.dark__mode:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    background-color: var(--white);
+
+    position: absolute;
+    top: 1px;
+    left: 1px;
+
+    transition: left .2s linear;
+}
+
+.dark__mode.active:before {
+    left: 26px;
+}
+
+.dark__mode-btn__icon {
+    z-index: 1;
+}

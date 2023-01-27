@@ -1,0 +1,163 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url(../../../fonts/DMSans-Regular.ttf);
+}
+
+:root {
+    --black: #171718;
+    --black-border: #26292D;
+    --white: #fff;
+    --purple: #5C62EC;
+
+    --dark-bg: var(--black);
+    --header-text: var(--white);
+    --accent: var(--purple);
+    --projects-text: var(--black);
+
+    /* Light mode */
+    --page-bg: var(--white);
+    --text-color: var(--black);
+    --shadows: rgba(0, 0, 0, 0.25);
+    --btn-bg: var(--black);
+    --border: var(--black-border);
+    --projects-bg: var(--white);
+}
+
+.night__mode {
+    /* Dark mode */
+
+    --page-bg:#252526;
+    --text-color: var(--white);
+    --shadows: rgba(255, 255, 255, 0.25);
+    --btn-bg: var(--white);
+    --border: var(--white);
+    --projects-bg: var(--black);
+}
+
+html, body {
+    min-height: 100vh;
+    
+    font-family: 'DM Sans', sans-serif;
+
+    /* Light mode */
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none !important;
+}
+
+/* Projects */
+
+.projects {
+    margin: 60px 0 40px;
+}
+
+.projects__title {
+    text-align: center;
+
+    font-family: 'DM Sans', sans-serif;
+    color: var(--accent);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.projects__content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media */
+
+@media (max-width: 1200px) {
+    .projects__name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .projects__item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 740px) {
+    .dark__mode {
+        order: 0;
+    }
+    
+    .projects__name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav__list {
+        margin-right: auto;
+    }
+
+    .header {
+        min-height: unset;
+    }
+    
+    .header__title h1 {
+        font-size: 40px;
+    }
+    
+    .header__title h2 {
+        font-size: 30px;
+    }
+    
+    .projects__item {
+        width: 100%;
+    }
+
+    .projects__name {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__title h1 {
+        font-size: 30px;
+    }
+    
+    .header__title h2 {
+        font-size: 22px;
+    }
+
+    .footer__icons {
+        font-size: 28px;
+    }
+}
