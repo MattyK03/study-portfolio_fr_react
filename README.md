@@ -1,4 +1,4 @@
-- 👋 Hi, I’m MattyK03
+- 👋 Hi, I’m Skobelev Matvey
 - 👀 I’m interested in web dev
-- 🌱 I’m currently learning js, ts, react
-- 📫 How to reach me: tg(@mattyk03), mail(mask0343@gmail.com)
+- 🌱 I’m currently learning js, ts, reactJS, nextJS
+- 📫 How to reach me: tg(t.me/mattyk03), mail(skobelevmatveyd@gmail.com)
